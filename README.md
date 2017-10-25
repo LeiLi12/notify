@@ -17,7 +17,6 @@ html中引入notify.js和notify.css
 
 ### hide()
   + 描述: notify hide
-
 ## 示例
 ```js
 const notify = new Notify({
@@ -30,3 +29,9 @@ notify.show({
   timeout: 2000
 })
 ```
+## 更改 
+* 新加了一个关闭按钮，功能为是否选择关闭整个页面。
+* 更改了窗口的部分样式，比如字体，文本排列，背景颜色等。
+* 在title的下面增加了悬停。
+* 给窗口增加了进入动画。
+* 窗口的显示时间延长到100000。
