@@ -1,16 +1,59 @@
 .notify-container {
   width: 300px;
   height: 100px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(164, 201, 189);
   border-radius: 4px;
-  position: fixed;
-  top: 10px;
-  right: 5px;
+  position:fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  background:rgb(255, 252, 252);
+  position:relative;
+  animation-name:myfirst;
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  animation-play-state:running;}
+  @-webkit-keyframes myfirst
+ {
+	0%   {background:rgb(255, 255, 255); left:0px; top:0px;}
+	25%  {background:rgb(255, 254, 254); left:50px; top:0px;}
+	50%  {background:rgb(255, 253, 253); left:50px; top:200px;}
+	75%  {background:rgb(255, 251, 251); left:0px; top:200px;}
+	100% {background:rgb(255, 253, 253); left:0px; top:0px;}
+ 
   /* display: none; */
+ }
+div{
+  position:relative;
+  height:50px;
+  margin-bottom:17px;
+  border-bottom: 1px solid transparent;
+
 }
 .notify-title {
-  border-bottom: 1px solid #ddd;
+  width: 80%;
+  display:inline-block;
+  font-family:微软雅黑;
+  font-size:20px;
+  font-weight: normal;
+}
+div:hover{
+
+  border-bottom: 1px solid rgba(207, 16, 16, 0.753);
+}
+
+#notify-btnClose{
+  float:right;
+  border-left:0;
+  border-bottom:0;
+  border-right:0;
+  background:hsla(157, 17%, 75%, 0.671)
 }
 .notify-content {
-  padding-left: 5px;
+  padding-left: 5px; 
+  text-align:center; 
 }

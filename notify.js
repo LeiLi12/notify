@@ -1,7 +1,10 @@
 !(() => {
   // html模版
   const template = `<section id="notify-container" class="notify-container">
+                       <div>
                         <h3 class="notify-title"></h3>
+                        <input id="notify-btnClose" type="button" value="关闭" onClick="custom_close()"/>
+                        </div>
                         <article class="notify-content"></article>
                       </section>`
 
@@ -80,3 +83,14 @@
   }
 
 })()
+
+// 选择是否关闭本页面
+function custom_close(){
+if 
+(confirm("您确定要关闭本页吗？")){
+window.opener=null;
+window.open('','_self');
+window.close();
+}
+else{}
+}
