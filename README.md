@@ -1,4 +1,4 @@
-# notify
+
 
 ## 如何使用
 html中引入notify.js和notify.css
